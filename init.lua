@@ -1,6 +1,10 @@
 --              AstroNvim Configuration Table
 -- All configuration changes should go inside of the table below
+vim.g.loaded_netrw = 1
+vim.g.loaded_netrwPlugin = 1
 
+-- set termguicolors to enable highlight groups
+vim.opt.termguicolors = true
 -- You can think of a Lua "table" as a dictionary like data structure the
 -- normal format is "key = value". These also handle array like data structures
 -- where a value with no key simply has an implicit numeric key
@@ -24,16 +28,18 @@ local config = {
     -- },
   },
   -- Set colorscheme to use
-  colorscheme = "tokyonight",
+  -- colorscheme = "tokyonight",
   -- colorscheme = "codeSTACKr Theme",
+  colorscheme = "catppuccin",
   -- Add highlight groups in any theme
   highlights = {
-    tokyonight = function(highlights)
-      local C = require "default_theme.colors"
+    -- catppuccin = function(highlights)
+    --   favour = 'mocha'
+    --   local C = require "default_theme.colors"
 
-      highlights.Normal = { fg = C.fg, bg = C.bg }
-      return highlights
-    end,
+    --   highlights.Normal = { fg = C.fg, bg = C.bg }
+    --   return highlights
+    -- end,
     -- init = { -- this table overrides highlights in all themes
     --   Normal = { bg = "#000000" },
     -- }
@@ -199,6 +205,7 @@ local config = {
       ["<leader>bc"] = { "<cmd>BufferLinePickClose<cr>", desc = "Pick to close" },
       ["<leader>bj"] = { "<cmd>BufferLinePick<cr>", desc = "Pick to jump" },
       ["<leader>bt"] = { "<cmd>BufferLineSortByTabs<cr>", desc = "Sort by tabs" },
+      ["<leader>e"] = { "<cmd>NvimTreeToggle<cr>", desc = "Nvim tree toggle" },
       -- quick save
       -- ["<C-s>"] = { ":w!<cr>", desc = "Save File" },  -- change description but the same command
     },
@@ -207,14 +214,63 @@ local config = {
       -- ["<esc>"] = false,
     },
   },
+  require("nvim-tree").setup({
+    sort_by = "case_sensitive",
+    renderer = {
+      group_empty = true,
+    },
+    filters = {
+      dotfiles = true,
+    },
+  }),
+  require("catppuccin").setup {
+    flavour = "mocha", -- latte, frappe, macchiato, mocha
+    term_colors = true,
+    transparent_background = false,
+    no_italic = false,
+    no_bold = false,
+    styles = {
+      comments = {},
+      conditionals = {},
+      loops = {},
+      functions = {},
+      keywords = {},
+      strings = {},
+      variables = {},
+      numbers = {},
+      booleans = {},
+      properties = {},
+      types = {},
+    },
+    color_overrides = {
+      mocha = {
+        base = "#000000",
+        mantle = "#000000",
+        crust = "#000000",
+      },
+    },
+    highlight_overrides = {
+      mocha = function(C)
+        return {
+          TabLineSel = { bg = C.pink },
+          CmpBorder = { fg = C.surface2 },
+          Pmenu = { bg = C.none },
+          TelescopeBorder = { link = "FloatBorder" },
+        }
+      end,
+    },
+  },
   -- Configure plugins
   plugins = {
     init = {
       {
         "HerringtonDarkholme/yats.vim",
-
+        "morhetz/gruvbox",
         "folke/tokyonight.nvim",
         "mattn/emmet-vim",
+        "catppuccin/nvim",
+        "nvim-tree/nvim-tree.lua",
+        ["nvim-neo-tree/neo-tree.nvim"] = { disable = true },
       },
       -- You can disable default plugins as follows:
       -- ["goolord/alpha-nvim"] = { disable = true },
