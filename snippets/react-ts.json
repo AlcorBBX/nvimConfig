@@ -1,0 +1,82 @@
+{
+  "tafce": {
+    "prefix": "tafce",
+    "body": [
+      "import { FC } from 'react'",
+      "",
+      "const ${TM_FILENAME_BASE}: FC = () => {",
+      "  return <div>${1}${TM_FILENAME_BASE}</div>",
+      "}",
+      "",
+      "export default ${TM_FILENAME_BASE}"
+    ]
+  },
+  "tafcec": {
+    "prefix": "tafcec",
+    "body": [
+      "import { FC, PropsWithChildren } from 'react'",
+      "",
+      "const ${TM_FILENAME_BASE}: FC<PropsWithChildren<unknown>> = () => {",
+      "  return <div>${1}${TM_FILENAME_BASE}</div>",
+      "}",
+      "",
+      "export default ${TM_FILENAME_BASE}"
+    ]
+  },
+  "nafce": {
+    "prefix": "nafce",
+    "body": [
+      "import { FC } from 'react'",
+      "import { Text, View } from 'react-native'",
+      "",
+      "const ${TM_FILENAME_BASE}: FC = () => {",
+      " return (",
+      "  <View>",
+      "   <Text>${1}${TM_FILENAME_BASE}</Text>",
+      "  </View>",
+      "  )",
+      "}",
+      "",
+      "export default ${TM_FILENAME_BASE}"
+    ]
+  },
+  "nafcec": {
+    "prefix": "nafcec",
+    "body": [
+      "import { FC, PropsWithChildren } from 'react'",
+      "import { View } from 'react-native'",
+      "",
+      "const ${TM_FILENAME_BASE}: FC<PropsWithChildren<unknown>> = ({children}) => {",
+      "  return <View>${1}{children}</View>",
+      "}",
+      "",
+      "export default ${TM_FILENAME_BASE}"
+    ]
+  },
+  "tafcen": {
+    "prefix": "tafcen",
+    "body": [
+      "import { NextPage } from 'next'",
+      "",
+      "const ${TM_FILENAME_BASE}Page: NextPage = () => {",
+      "  return <div>${1}${TM_FILENAME_BASE}</div>",
+      "}",
+      "",
+      "export default ${TM_FILENAME_BASE}Page"
+    ]
+  },
+  "tafces": {
+    "prefix": "tafces",
+    "body": [
+      "import { FC, PropsWithChildren } from 'react'",
+      "",
+      "import styles from './${1}${TM_FILENAME_BASE}.module.scss'",
+      "",
+      "const ${TM_FILENAME_BASE}: FC<PropsWithChildren<unknown>> = () => {",
+      "  return <div>${2}${TM_FILENAME_BASE}</div>",
+      "}",
+      "",
+      "export default ${TM_FILENAME_BASE}"
+    ]
+  }
+}

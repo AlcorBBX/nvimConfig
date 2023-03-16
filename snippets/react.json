@@ -1,0 +1,28 @@
+{
+  "hook": {
+    "prefix": "hook",
+    "body": ["export const ${TM_FILENAME_BASE} = () => ${1}"]
+  },
+  "imrs": {
+    "prefix": "imrs",
+    "body": ["import styles from './${1}${TM_FILENAME_BASE}.module.scss'"]
+  },
+  "rafce": {
+    "prefix": "rafce",
+    "body": [
+      "const ${TM_FILENAME_BASE} = () => {",
+      " return <div>${1}${TM_FILENAME_BASE}</div>",
+      "}",
+      "",
+      "export default ${TM_FILENAME_BASE}"
+    ]
+  },
+  "usea": {
+    "prefix": "usea",
+    "body": ["const {${1}} = useAuth()"]
+  },
+  "comment": {
+    "prefix": "comment",
+    "body": ["{/*${1}*/}"]
+  }
+}

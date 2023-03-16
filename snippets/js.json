@@ -1,0 +1,10 @@
+{
+  "inter": {
+    "prefix": "inter",
+    "body": ["interface I${TM_FILENAME_BASE} { ", "	${1}", "}"]
+  },
+  "service": {
+    "prefix": "service",
+    "body": ["export const ${TM_FILENAME_BASE} = { ", "	${1}", "}"]
+  }
+}
