@@ -244,9 +244,9 @@ local config = {
     },
     color_overrides = {
       mocha = {
-        base = "#000000",
-        mantle = "#000000",
-        crust = "#000000",
+        base = "#202023",
+        mantle = "#202023",
+        crust = "#202023",
       },
     },
     highlight_overrides = {
