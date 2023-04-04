@@ -20,8 +20,11 @@
   
   5. Then write inside this file `require("[pluginName]".setup({[options]}))`.
   
-  #### Example: `require("neo-tree").setup({view = {adaptive_size = true}))`
+  #### Example: `require("nvim-tree").setup({view = {adaptive_size = true}))`
   
   If you want add keymap write `vim.kaymap.set('n', 'keymap', '[command]')` (idk what is 'n')
   
   #### Exaple: `vim.kaymap.set('n', '<Space>e', ':NvimTreeFindFileToggle<CR>')`
+
+  6. Add new plugin file in `init.lua` (`require("core.plugin_config.[pluginName]") `)
+  Example: `require("core_plugin_config.nvim-tree")`
