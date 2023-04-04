@@ -24,6 +24,8 @@ local plugins = {
   'akinsho/bufferline.nvim',
   'numToStr/Comment.nvim',
   'kdheepak/lazygit.nvim',
+  'MunifTanjim/prettier.nvim',
+  'jose-elias-alvarez/null-ls.nvim',
 
   'nvim-tree/nvim-tree.lua',
   'nvim-tree/nvim-web-devicons',

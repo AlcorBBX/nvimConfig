@@ -14,3 +14,6 @@ require("core.plugin_config.nvim-autopairs")
 require("core.plugin_config.bufferline")
 -- require("core.plugin_config.yats")
 require("core.plugin_config.comment")
+require("core.plugin_config.prettier")
+require("core.plugin_config.null-ls")
+
