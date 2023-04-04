@@ -18,11 +18,10 @@ local plugins = {
     'dracula/vim',
     lazy = false,
   },
-  'HerringtonDarkholme/yats.vim',
-  'mattn/emmet-vim',
+ -- 'HerringtonDarkholme/yats.vim',
   'windwp/nvim-ts-autotag',
   'windwp/nvim-autopairs',
-  'akinsho/nvim-bufferline.lua',
+  'akinsho/bufferline.nvim',
 
   'nvim-tree/nvim-tree.lua',
   'nvim-tree/nvim-web-devicons',
