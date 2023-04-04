@@ -49,9 +49,12 @@
   Next buffer: `] + b`</br>
   Prev buffer: `[ + b`
   
-  ##LSP
+  ## LSP
   Lsp finder: `g + d`</br>
   Lsp hover docs: `K`</br>
   Lsp code action: `Space + c + a`</br>
   Lsp rename: `Space + r + n`
   
+  ## Lazygit
+  Toggle lazygit: `Space + g + g`</br>
+  Toggle lazygit config: `Space + g + c`
