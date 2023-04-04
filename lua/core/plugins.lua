@@ -23,6 +23,7 @@ local plugins = {
   'windwp/nvim-autopairs',
   'akinsho/bufferline.nvim',
   'numToStr/Comment.nvim',
+  'kdheepak/lazygit.nvim',
 
   'nvim-tree/nvim-tree.lua',
   'nvim-tree/nvim-web-devicons',
