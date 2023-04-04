@@ -24,6 +24,7 @@ local plugins = {
   'akinsho/bufferline.nvim',
   'numToStr/Comment.nvim',
   'kdheepak/lazygit.nvim',
+  'mrjones2014/smart-splits.nvim',
 
   'nvim-tree/nvim-tree.lua',
   'nvim-tree/nvim-web-devicons',

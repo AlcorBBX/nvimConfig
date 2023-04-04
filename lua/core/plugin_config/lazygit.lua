@@ -1,4 +1,9 @@
-require("lazygit").setup({})
+-- require("lazygit").setup({})
 
--- dont working
-vim.keymap.set('n', '<Space>gt', ':LazyGit<CR>')
+--toggle lazy git
+vim.keymap.set('n', '<Space>gg', ':LazyGit<CR>')
+-- toggle lazy git config
+vim.keymap.set('n', '<Space>gc', ':LazyGitConfig<CR>')
+-- vim.keymap.set('n', '<Space>ggf', ':LazyGitCurrentFile<CR>')
+-- vim.keymap.set('n', '<Space>ggl', ':LazyGitFilter<CR>')
+-- vim.keymap.set('n', '<Space>ggcl', ':LazyGitFilterCurrentFile<CR>')
