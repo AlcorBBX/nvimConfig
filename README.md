@@ -30,7 +30,7 @@
   Example: `require("core_plugin_config.nvim-tree")`
 
 ## Keymaps
-  Save file: `Space + w`
+  Save file: `Space + w`</br>
   Exit neovim: `Space + q`
   
   ### Nvim-tree
@@ -40,18 +40,18 @@
   Comment line: `g + c + c`
   
   ### Telescope
-  Find file in this directory: `Space + f + f`
-  Find file in all directorys: `Space + Space`
-  Find word in this directory: `Space + f + w`
+  Find file in this directory: `Space + f + f`</br>
+  Find file in all directorys: `Space + Space`</br>
+  Find word in this directory: `Space + f + w`</br>
   Find plugins help: `Space + f + h` 
   
   ### Bufferline
-  Next buffer: `] + b`
+  Next buffer: `] + b`</br>
   Prev buffer: `[ + b`
   
   ##LSP
-  Lsp finder: `g + d`
-  Lsp hover docs: `K`
-  Lsp code action: `Space + c + a`
+  Lsp finder: `g + d`</br>
+  Lsp hover docs: `K`</br>
+  Lsp code action: `Space + c + a`</br>
   Lsp rename: `Space + r + n`
   
