@@ -18,7 +18,7 @@ local plugins = {
     'dracula/vim',
     lazy = false,
   },
- -- 'HerringtonDarkholme/yats.vim',
+  'HerringtonDarkholme/yats.vim',
   'windwp/nvim-ts-autotag',
   'windwp/nvim-autopairs',
   'akinsho/bufferline.nvim',
@@ -26,6 +26,8 @@ local plugins = {
   'kdheepak/lazygit.nvim',
   'MunifTanjim/prettier.nvim',
   'jose-elias-alvarez/null-ls.nvim',
+  'hrsh7th/cmp-buffer',
+  'folke/which-key.nvim',
 
   'nvim-tree/nvim-tree.lua',
   'nvim-tree/nvim-web-devicons',

@@ -1,1 +1,1 @@
-require("yats").setup({})
+-- require("yats.vim").setup({})
