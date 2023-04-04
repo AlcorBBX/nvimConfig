@@ -28,3 +28,30 @@
 
   6. Add new plugin file in `init.lua` (`require("core.plugin_config.[pluginName]") `)
   Example: `require("core_plugin_config.nvim-tree")`
+
+## Keymaps
+  Save file: `Space + w`
+  Exit neovim: `Space + q`
+  
+  ### Nvim-tree
+  Open file tree (nvim-tree): `Space + e`
+  
+  ### Comment
+  Comment line: `g + c + c`
+  
+  ### Telescope
+  Find file in this directory: `Space + f + f`
+  Find file in all directorys: `Space + Space`
+  Find word in this directory: `Space + f + w`
+  Find plugins help: `Space + f + h` 
+  
+  ### Bufferline
+  Next buffer: `] + b`
+  Prev buffer: `[ + b`
+  
+  ##LSP
+  Lsp finder: `g + d`
+  Lsp hover docs: `K`
+  Lsp code action: `Space + c + a`
+  Lsp rename: `Space + r + n`
+  
