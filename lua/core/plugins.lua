@@ -25,10 +25,12 @@ local plugins = {
   'hrsh7th/cmp-nvim-lsp',
   'hrsh7th/nvim-cmp', -- Completion
 
+  'folke/todo-comments.nvim',
+
   'hrsh7th/cmp-path',
   'hrsh7th/cmp-cmdline',
 
-  'neovim/nvim-lspconfig', -- LSP
+  'neovim/nvim-lspconfig',           -- LSP
   'jose-elias-alvarez/null-ls.nvim', -- Neovim as a language server to inject LSP diagnostics, code actions, and more via Lua
   'williamboman/mason.nvim',
   'williamboman/mason-lspconfig.nvim',
@@ -45,7 +47,7 @@ local plugins = {
   'norcalli/nvim-colorizer.lua',
   'folke/zen-mode.nvim',
   "iamcco/markdown-preview.nvim",
-    -- 'github/copilot.vim'
+  -- 'github/copilot.vim'
   'lewis6991/gitsigns.nvim',
   'dinhhuy258/git.nvim', -- For git blame & browse
 
@@ -59,6 +61,12 @@ local plugins = {
   'nvim-treesitter/nvim-treesitter',
   'bluz71/vim-nightfly-colors',
   'christoomey/vim-tmux-navigator',
+
+  'rust-lang/rust.vim',
+  -- 'neoclide/coc.nvim',
+  'dense-analysis/ale',
+  'simrat39/rust-tools.nvim'
+
 }
 
 local opts = {}

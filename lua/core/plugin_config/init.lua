@@ -21,5 +21,8 @@ require("core.plugin_config.which-key")
 require("core.plugin_config.lspsaga")
 require("core.plugin_config.cmp")
 require("core.plugin_config.lspkind")
+require("core.plugin_config.todo-comments")
 
 require("core.plugin_config.lspconfig")
+
+require("core.plugin_config.rust-tools")
