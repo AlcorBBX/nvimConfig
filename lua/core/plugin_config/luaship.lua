@@ -1,1 +1,8 @@
-require('luasnip').setup({})
+require('luasnip').setup({
+  -- vscode = {
+  --   path = {
+  --     "./snippets"
+  --   }
+  -- }
+})
+
