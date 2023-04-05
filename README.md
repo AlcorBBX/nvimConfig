@@ -47,7 +47,7 @@
   
   ### Telescope
   Find file in this directory: `Space + f + f`</br>
-  Find file in all directorys: `Space + F`</br>
+  Find file in all directorys: `Space + f + F`</br>
   Find word in this directory: `Space + f + w`</br>
   Find plugins help: `Space + f + h` 
   
