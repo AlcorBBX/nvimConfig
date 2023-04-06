@@ -7,7 +7,7 @@ vim.keymap.set('n', '<c-l>', ':wincmd l<CR>')
 vim.keymap.set('n', '<leader>h', ':nohlsearch<CR>')
 
 -- save file
-vim.keymap.set('n', '<Space>w', ':w<CR>')
+vim.keymap.set('n', '<leader>w', ':Prettier<CR>:w<CR>')
 -- exit nvim
 vim.keymap.set('n', '<Space>q', ':q<CR>')
 
