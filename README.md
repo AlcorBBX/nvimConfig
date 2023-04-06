@@ -2,9 +2,9 @@
 
 ## Before installing
 1. Install ![Node](https://nodejs.org/en)
-2. Install ![LazyGit](https://github.com/jesseduffield/lazygit) - git ui toggle terminal (<Space>gg)
-3. Install ![ripgrep](https://github.com/BurntSushi/ripgrep) - live grep telescope search (<Space>fw)
-4. Install NerdFont (https://www.nerdfonts.com/font-downloads)
+2. Install ![LazyGit](https://github.com/jesseduffield/lazygit) - git ui toggle terminal (<Space>gg) (Optional!)
+3. Install ![ripgrep](https://github.com/BurntSushi/ripgrep) - live grep telescope search (<Space>fw) (Optional!)
+4. Install NerdFont (https://www.nerdfonts.com/font-downloads) (Optional!)
 
 ## Download
   1. Donwload ![neovim](https://github.com/neovim/neovim/wiki/Installing-Neovim)
