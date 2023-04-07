@@ -26,3 +26,5 @@ require("core.plugin_config.todo-comments")
 require("core.plugin_config.lspconfig")
 
 require("core.plugin_config.rust-tools")
+
+-- require("core.plugin_config.tabnine")

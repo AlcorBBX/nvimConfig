@@ -17,6 +17,7 @@ local plugins = {
     'dracula/vim',
     lazy = false,
   },
+  -- "codota/tabnine-nvim",
 
   'nvim-lualine/lualine.nvim',
   'nvim-lua/plenary.nvim',
