@@ -22,6 +22,7 @@ local plugins = {
   'nvim-lualine/lualine.nvim',
   'nvim-lua/plenary.nvim',
   'onsails/lspkind-nvim',
+
   'hrsh7th/cmp-buffer',
   'hrsh7th/cmp-nvim-lsp',
   'hrsh7th/nvim-cmp', -- Completion

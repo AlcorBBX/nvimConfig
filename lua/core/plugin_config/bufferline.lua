@@ -6,4 +6,6 @@ require("bufferline").setup({
 
 vim.keymap.set('n', ']b', ':BufferLineCycleNext<CR>')
 vim.keymap.set('n', '[b', ':BufferLineCyclePrev<CR>')
-vim.keymap.set('n', '<leader>c', ':BufferLineCycleNext<CR>:BufferLineCloseLeft<CR>')
+-- vim.keymap.set('n', '<leader>c', ':BufferLineCycleNext<CR>:BufferLineCloseLeft<CR>')
+vim.keymap.set('n', '<leader>cl', ':BufferLineCloseLeft<CR>')
+vim.keymap.set('n', '<leader>cr', ':BufferLineCloseRight<CR>')
