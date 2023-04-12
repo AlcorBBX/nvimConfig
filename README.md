@@ -40,10 +40,12 @@
   Exit neovim: `Space + q`
   
   ### Nvim-tree
-  Open file tree (nvim-tree): `Space + e`
+  Open file tree (nvim-tree): `Space + e`</br>
+  Hide/show config files: `H`
   
   ### Comment
-  Comment line: `g + c + c`
+  Comment line: `g + c + c`</br>
+  Comment block: `g + b + c`
   
   ### Telescope
   Find file in this directory: `Space + f + f`</br>
@@ -59,7 +61,8 @@
   Lsp finder: `g + d`</br>
   Lsp hover docs: `K`</br>
   Lsp code action: `Space + c + a`</br>
-  Lsp rename: `Space + r + n`
+  Lsp rename: `Space + l + r` </br>
+  LSP go to definition: `Space + l + R` </br>
   
   ## Lazygit
   Toggle lazygit: `Space + g + g`</br>
