@@ -67,3 +67,8 @@
   ## Lazygit
   Toggle lazygit: `Space + g + g`</br>
   Toggle lazygit config: `Space + g + c`
+  
+  ## Splits buffers
+  Vertical splits: `Ctrl + w + v`</br>
+  Horizontal splits: `Ctrl + w + s`</br>
+  Toggle window keymaps: `Ctrl + w`</br>
