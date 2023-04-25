@@ -45,7 +45,10 @@ local plugins = {
   'nvim-telescope/telescope-file-browser.nvim',
   'windwp/nvim-autopairs',
   'windwp/nvim-ts-autotag',
+
   'numToStr/Comment.nvim',
+  -- 'JoosepAlviste/nvim-ts-context-commentstring',
+
   'norcalli/nvim-colorizer.lua',
   'folke/zen-mode.nvim',
   "iamcco/markdown-preview.nvim",
@@ -60,7 +63,12 @@ local plugins = {
   'MunifTanjim/prettier.nvim',
   'folke/which-key.nvim',
   'nvim-tree/nvim-tree.lua',
-  'nvim-treesitter/nvim-treesitter',
+
+  {
+    'nvim-treesitter/nvim-treesitter',
+    'JoosepAlviste/nvim-ts-context-commentstring',
+    lazy = false,
+  },
   'bluz71/vim-nightfly-colors',
   'christoomey/vim-tmux-navigator',
 

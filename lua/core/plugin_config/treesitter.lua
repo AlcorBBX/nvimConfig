@@ -15,6 +15,9 @@ require 'nvim-treesitter.configs'.setup {
     -- "html"
   },
   -- Install parsers synchronously (only applied to `ensure_installed`)
+  context_commentstring = {
+    enable = true
+  },
   sync_install = false,
   auto_install = true,
   highlight = {
