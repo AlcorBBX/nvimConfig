@@ -75,8 +75,9 @@ local plugins = {
   'rust-lang/rust.vim',
   -- 'neoclide/coc.nvim',
   'dense-analysis/ale',
-  'simrat39/rust-tools.nvim'
+  'simrat39/rust-tools.nvim',
 
+  'j-hui/fidget.nvim'
 }
 
 local opts = {}

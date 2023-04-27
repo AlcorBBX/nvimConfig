@@ -28,6 +28,7 @@ require("core.plugin_config.lspconfig")
 require("core.plugin_config.rust-tools")
 
 
+require("core.plugin_config.fidget")
 
 require("core.plugin_config.zen-mode")
 
