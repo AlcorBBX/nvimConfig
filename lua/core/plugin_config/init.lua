@@ -29,4 +29,6 @@ require("core.plugin_config.rust-tools")
 
 
 
+require("core.plugin_config.zen-mode")
+
 -- require("core.plugin_config.tabnine")
