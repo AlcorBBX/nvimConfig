@@ -12,7 +12,7 @@
   3. Open your terminal and write `nvim`
   4. After opened nvim, write this command `:Lazy`
   
-## Configure novim
+## Configure neovim
   You can configure your neovim. 
   1. Open `.../.config/nvim/lua/core`. 
   2. Then open `plugins.lua`
@@ -76,3 +76,6 @@
   Toggle window keymaps: `Ctrl + w`</br>
   ##
   Put some text from system buffer (Linux): `" + * + p`
+  
+  ## Zen mode
+  Go to zen mode: `z + Z`
