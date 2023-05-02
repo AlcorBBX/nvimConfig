@@ -47,7 +47,7 @@ local plugins = {
   'windwp/nvim-ts-autotag',
 
   'numToStr/Comment.nvim',
-  -- 'JoosepAlviste/nvim-ts-context-commentstring',
+  'JoosepAlviste/nvim-ts-context-commentstring',
 
   'norcalli/nvim-colorizer.lua',
   'folke/zen-mode.nvim',
@@ -64,11 +64,7 @@ local plugins = {
   'folke/which-key.nvim',
   'nvim-tree/nvim-tree.lua',
 
-  {
-    'nvim-treesitter/nvim-treesitter',
-    'JoosepAlviste/nvim-ts-context-commentstring',
-    lazy = false,
-  },
+  'nvim-treesitter/nvim-treesitter',
   'bluz71/vim-nightfly-colors',
   'christoomey/vim-tmux-navigator',
 

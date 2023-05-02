@@ -1,4 +1,4 @@
-
 local comment = require("Comment")
-comment.setup({})
--- vim.keymap.set('n', '<Space>/', comment.toggle.linewise, {})
+comment.setup({
+  pre_hook = require('ts_context_commentstring.integrations.comment_nvim').create_pre_hook(),
+})
