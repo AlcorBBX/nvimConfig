@@ -77,7 +77,8 @@ local plugins = {
   'dense-analysis/ale',
   'simrat39/rust-tools.nvim',
 
-  'j-hui/fidget.nvim'
+  'j-hui/fidget.nvim',
+  'jinh0/eyeliner.nvim'
 }
 
 local opts = {}
