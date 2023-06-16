@@ -74,3 +74,6 @@
   Horizontal buffer navigation: `Ctrl + l/j`</br>
   Vertical buffer navigation: `Ctrl + j/k`</br>
   Toggle window keymaps: `Ctrl + w`</br>
+
+## 
+Show cmp window: `ctrl + space`
