@@ -54,7 +54,8 @@
   
   ### Bufferline
   Next buffer: `L`</br>
-  Prev buffer: `R`
+  Prev buffer: `R`</br>
+  Close buffer: `Q`
   
   ## LSP
   Lsp finder: `g + d`</br>
