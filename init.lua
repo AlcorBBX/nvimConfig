@@ -1,5 +1,4 @@
-require("core.options")
-require("core.keymaps")
-require("core.plugins")
-require("core.plugin_config")
-require 'lspconfig'.pyright.setup {}
+require "options"
+require "keymaps"
+require "Lazy"
+require "autocommands"

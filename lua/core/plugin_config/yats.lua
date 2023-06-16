@@ -1,1 +1,0 @@
--- require("yats.vim").setup({})
