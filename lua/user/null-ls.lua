@@ -18,13 +18,25 @@ function M.config()
   -- https://github.com/jose-elias-alvarez/null-ls.nvim/tree/main/lua/null-ls/builtins/diagnostics
   local diagnostics = null_ls.builtins.diagnostics
 
+  -- local formatters = null_ls.builtins.formatters
+  -- formatting.setup {
+  --   { command = "stylua", filetypes = { "lua" } },
+  --   {
+  --     command = "rustfmt",
+  --     filetypes = { "rust" },
+  --   },
+  --   {
+  --     command = "prettierd",
+  --     -- filetypes = { "typescript", "javascript", "typescriptreact", "javascriptreact" },
+  --   },
+  -- }
+
   -- https://github.com/prettier-solidity/prettier-plugin-solidity
   null_ls.setup {
     debug = false,
     sources = {
       formatting.prettier.with {
         extra_filetypes = { "toml" },
-        extra_args = { "--no-semi", "--single-quote", "--jsx-single-quote" },
       },
       formatting.black.with { extra_args = { "--fast" } },
       formatting.stylua,
