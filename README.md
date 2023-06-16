@@ -44,25 +44,24 @@
   Hide/show config files: `H`
   
   ### Comment
-  Comment line: `g + c + c`</br>
-  Comment block: `g + b + c`
+  Comment line: `Space + /`</br>
   
   ### Telescope
   Find file in this directory: `Space + f + f`</br>
-  Find file in all directorys: `Space + f + F`</br>
-  Find word in this directory: `Space + f + w`</br>
-  Find plugins help: `Space + f + h` 
+  Find projects: `Space + f + p`</br>
+  Find text in this directory: `Space + f + t`</br>
+  Find buffers: `Space + f + b` 
   
   ### Bufferline
-  Next buffer: `] + b`</br>
-  Prev buffer: `[ + b`
+  Next buffer: `L`</br>
+  Prev buffer: `R`
   
   ## LSP
   Lsp finder: `g + d`</br>
-  Lsp hover docs: `K`</br>
-  Lsp code action: `Space + c + a`</br>
+  Lsp hover info: `K`</br>
+  Lsp code action: `Space + l + a`</br>
   Lsp rename: `Space + l + r` </br>
-  LSP go to definition: `Space + l + R` </br>
+  LSP replace mode: `Space + l + R` </br>
   
   ## Lazygit
   Toggle lazygit: `Space + g + g`</br>
@@ -74,8 +73,3 @@
   Horizontal buffer navigation: `Ctrl + l/j`</br>
   Vertical buffer navigation: `Ctrl + j/k`</br>
   Toggle window keymaps: `Ctrl + w`</br>
-  ##
-  Put some text from system buffer (Linux): `" + * + p`
-  
-  ## Zen mode
-  Go to zen mode: `z + Z`
