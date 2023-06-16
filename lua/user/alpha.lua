@@ -27,7 +27,7 @@ function M.config()
     dashboard.button("q", " " .. " Quit", ":qa<CR>"),
   }
   local function footer()
-    return "chrisatmachine.com"
+    return "https://alcorbbx.vercel.app/"
   end
 
   dashboard.section.footer.val = footer()
