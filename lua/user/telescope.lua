@@ -28,6 +28,11 @@ M.opts = {
       },
     },
   },
+  pickers = {
+    find_files = {
+      theme = "dropdown",
+    },
+  },
 }
 
 return M
