@@ -39,6 +39,42 @@ M.general = {
       end,
       "LSP code action",
     },
+    ["<A-j>"] = { "<cmd>m +1<CR>", "Move line up" },
+    ["<A-k>"] = { "<cmd>m -2<CR>", "Move line down" },
+
+    ["<leader>ta"] = {
+      function()
+        vim.lsp.buf.add_workspace_folder()
+      end,
+      "Add workspace folder",
+    },
+    ["<leader>tr"] = {
+      function()
+        vim.lsp.buf.remove_workspace_folder()
+      end,
+      "Remove workspace folder",
+    },
+
+    ["<leader>tl"] = {
+      function()
+        print(vim.inspect(vim.lsp.buf.list_workspace_folders()))
+      end,
+      "List workspace folders",
+    },
+
+    ["<leader>tK"] = {
+      function()
+        vim.cmd "WhichKey"
+      end,
+      "Which-key all keymaps",
+    },
+    ["<leader>tk"] = {
+      function()
+        local input = vim.fn.input "WhichKey: "
+        vim.cmd("WhichKey " .. input)
+      end,
+      "Which-key query lookup",
+    },
   },
 }
 
@@ -47,6 +83,11 @@ M.disabled = {
     ["<C-n>"] = { "" },
     ["<leader>fm"] = { "" },
     ["<leader>ca"] = { "" },
+    ["<leader>wa"] = { "" },
+    ["<leader>wt"] = { "" },
+    ["<leader>wL"] = { "" },
+    ["<leader>wK"] = { "" },
+    ["<leader>wk"] = { "" },
   },
 }
 -- more keybinds!
