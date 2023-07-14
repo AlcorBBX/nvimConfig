@@ -42,6 +42,13 @@ M.general = {
     ["<A-j>"] = { "<cmd>m +1<CR>", "Move line up" },
     ["<A-k>"] = { "<cmd>m -2<CR>", "Move line down" },
 
+    ["<leader>lr"] = {
+      function()
+        require("nvchad_ui.renamer").open()
+      end,
+      "LSP rename",
+    },
+
     ["<leader>ta"] = {
       function()
         vim.lsp.buf.add_workspace_folder()
@@ -75,6 +82,7 @@ M.general = {
       end,
       "Which-key query lookup",
     },
+    ["<leader>h"] = { ":noh <CR>", "Clear highlights" },
   },
 }
 
@@ -88,6 +96,9 @@ M.disabled = {
     ["<leader>wL"] = { "" },
     ["<leader>wK"] = { "" },
     ["<leader>wk"] = { "" },
+    ["<leader>ra"] = { "" },
+    ["<Esc>"] = { "" },
+    ["<leader>h"] = { "" },
   },
 }
 -- more keybinds!
