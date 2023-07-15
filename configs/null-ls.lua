@@ -8,7 +8,7 @@ local b = null_ls.builtins
 
 local sources = {
   -- webdev stuff
-  b.formatting.deno_fmt.with { extra_args = { "--use-tabs", "--single-quote" } }, -- choosed deno for ts/js files cuz its very fast!
+  -- b.formatting.deno_fmt.with { extra_args = { "--use-tabs", "--single-quote" } }, -- choosed deno for ts/js files cuz its very fast!
 
   b.formatting.prettierd.with {
     filetypes = {
@@ -16,8 +16,8 @@ local sources = {
       "markdown",
       "css",
       "scss",
-      -- "typescript",
-      -- "javascript",
+      "typescript",
+      "javascript",
       "typescriptreact",
       "javascriptreact",
       "tsx",
