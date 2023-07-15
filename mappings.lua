@@ -83,6 +83,12 @@ M.general = {
       "Which-key query lookup",
     },
     ["<leader>h"] = { ":noh <CR>", "Clear highlights" },
+    ["gl"] = {
+      function()
+        vim.diagnostic.open_float { border = "rounded" }
+      end,
+      "Floating diagnostic",
+    },
   },
 }
 
@@ -101,6 +107,7 @@ M.disabled = {
     ["<leader>ra"] = { "" },
     ["<Esc>"] = { "" },
     ["<leader>h"] = { "" },
+    ["<leader>f"] = { "" },
   },
 }
 -- more keybinds!
