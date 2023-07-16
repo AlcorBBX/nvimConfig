@@ -89,6 +89,13 @@ M.general = {
       end,
       "Floating diagnostic",
     },
+    ["<leader>tp"] = {
+      ":lua require('telescope').extensions.projects.projects()<CR>",
+      "Projects",
+      opts = { silent = true },
+    },
+    ["<leader>tc"] = { ":e $MYVIMRC <CR>", "Go to config", opts = { silent = true } },
+    ["<leader>W"] = { ":noautocmd w <CR>", "Save without formating", opts = { silent = true } },
   },
 }
 

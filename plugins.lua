@@ -6,6 +6,41 @@ local plugins = {
   -- Override plugin definition options
 
   {
+    "ahmedkhalf/project.nvim",
+    dependencies = {
+      {
+        "nvim-telescope/telescope.nvim",
+        event = "Bufenter",
+        cmd = { "Telescope" },
+      },
+    },
+    config = function()
+      local project = require "project_nvim"
+      project.setup {
+        -- detection_methods = { "lsp", "pattern" }, -- NOTE: lsp detection will get annoying with multiple langs in one project
+        detection_methods = { "pattern" },
+        -- patterns used to detect root dir, when **"pattern"** is in detection_methods
+        patterns = { ".git", "Makefile", "package.json" },
+      }
+      local telescope = require "telescope"
+      telescope.load_extension "projects"
+    end,
+  },
+
+  {
+    "nvim-telescope/telescope.nvim",
+    -- commit = "40c31fdde93bcd85aeb3447bb3e2a3208395a868",
+    event = "Bufenter",
+    cmd = { "Telescope" },
+    dependencies = {
+      {
+        "ahmedkhalf/project.nvim",
+        -- commit = "8c6bad7d22eef1b71144b401c9f74ed01526a4fb",
+      },
+    },
+  },
+
+  {
     "neovim/nvim-lspconfig",
     dependencies = {
       -- format & linting
@@ -57,6 +92,7 @@ local plugins = {
   {
     -- like TODO HACK WARNING FIX
     "folke/todo-comments.nvim",
+    lazy = false,
   },
   {
     -- Neovim plugin to improve the default vim.ui interfaces
