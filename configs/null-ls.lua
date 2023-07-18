@@ -8,7 +8,7 @@ local b = null_ls.builtins
 
 local sources = {
   -- webdev stuff
-  -- b.formatting.deno_fmt.with { extra_args = { "--use-tabs", "--single-quote" } }, -- choosed deno for ts/js files cuz its very fast!
+  b.formatting.deno_fmt.with { extra_args = { "--single-quote" } }, -- choosed deno for ts/js files cuz its very fast!
 
   b.formatting.prettierd.with {
     filetypes = {
@@ -16,8 +16,8 @@ local sources = {
       "markdown",
       "css",
       "scss",
-      "typescript",
-      "javascript",
+      -- "typescript",
+      -- "javascript",
       "typescriptreact",
       "javascriptreact",
       "tsx",
@@ -78,12 +78,13 @@ null_ls.setup {
   debug = false,
   sources = sources,
   debounce = 300,
+  on_attach = on_attach,
   -- format on save
-  on_attach = function()
-    vim.api.nvim_create_autocmd("BufWritePre", {
-      callback = function()
-        vim.lsp.buf.format()
-      end,
-    })
-  end,
+  -- on_attach = function()
+  --   vim.api.nvim_create_autocmd("BufWritePre", {
+  --     callback = function()
+  --       vim.lsp.buf.format()
+  --     end,
+  --   })
+  -- end,
 }
