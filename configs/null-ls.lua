@@ -16,15 +16,29 @@ local sources = {
       "markdown",
       "css",
       "scss",
-      -- "typescript",
-      -- "javascript",
+      "typescript",
+      "javascript",
       "typescriptreact",
       "javascriptreact",
       "tsx",
       "jsx",
+      "vue",
+      "svelte",
     },
   }, -- so prettier works only on these filetypes
 
+  b.diagnostics.selene.with {
+    filetypes = {
+      "lua",
+    },
+  },
+
+  -- b.diagnostics.eslint_d.with {
+  --   -- ignore prettier warnings from eslint-plugin-prettier
+  --   filter = function(diagnostic)
+  --     return diagnostic.code ~= "prettier/prettier"
+  --   end,
+  -- },
   -- b.formatting.prettier.with {
   --   filetypes = {
   --     "html",
@@ -79,12 +93,4 @@ null_ls.setup {
   sources = sources,
   debounce = 300,
   on_attach = on_attach,
-  -- format on save
-  -- on_attach = function()
-  --   vim.api.nvim_create_autocmd("BufWritePre", {
-  --     callback = function()
-  --       vim.lsp.buf.format()
-  --     end,
-  --   })
-  -- end,
 }

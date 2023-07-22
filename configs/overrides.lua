@@ -9,6 +9,9 @@ M.treesitter = {
     "javascript",
     "typescript",
     "tsx",
+    "vue",
+    "svelte",
+    "astro",
     "c",
     "markdown",
     "markdown_inline",
@@ -29,18 +32,19 @@ M.mason = {
     -- lua stuff
     "lua-language-server",
     "stylua",
-
+    -- "eslint",
     -- web dev stuff
     "css-lsp",
     "html-lsp",
     "typescript-language-server",
     "deno",
-    "prettier",
+    "prettierd",
 
     -- c/cpp stuff
     "clangd",
     "clang-format",
   },
+  automatic_installation = true,
 }
 
 -- git support in nvimtree

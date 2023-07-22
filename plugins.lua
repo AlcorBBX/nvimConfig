@@ -4,7 +4,48 @@ local overrides = require "custom.configs.overrides"
 local plugins = {
 
   -- Override plugin definition options
+  -- TODO
+  -- {
+  --   "lukas-reineke/cmp-under-comparator",
+  --   dependencies = {},
+  -- },
+  -- {
+  --   -- GIT LINKS CREATER
+  --   "ruifm/gitlinker.nvim",
+  --   dependencies = {
+  --     "nvim-lua/plenary.nvim",
+  --   },
+  -- },
+  {
+    "nvimdev/lspsaga.nvim",
+    config = function()
+      require("lspsaga").setup {}
+    end,
+    dependencies = {
+      "nvim-treesitter/nvim-treesitter",
+      "nvim-tree/nvim-web-devicons",
+    },
+    event = "LspAttach",
+  },
+  {
+    -- GIT iccue, review...
+    -- NOTE: its dont working
+    "pwntester/octo.nvim",
+    dependencies = {
+      "nvim-lua/plenary.nvim",
+      "nvim-telescope/telescope.nvim",
+      "nvim-tree/nvim-web-devicons",
+    },
+    config = function()
+      require("octo").setup()
+    end,
+    lazy = false,
+  },
 
+  {
+    "iamcco/markdown-preview.nvim",
+    lazy = false,
+  },
   {
     "ahmedkhalf/project.nvim",
     dependencies = {
@@ -29,13 +70,18 @@ local plugins = {
 
   {
     "nvim-telescope/telescope.nvim",
-    -- commit = "40c31fdde93bcd85aeb3447bb3e2a3208395a868",
     event = "Bufenter",
     cmd = { "Telescope" },
     dependencies = {
       {
         "ahmedkhalf/project.nvim",
-        -- commit = "8c6bad7d22eef1b71144b401c9f74ed01526a4fb",
+      },
+    },
+    opts = {
+      pickers = {
+        find_files = {
+          theme = "dropdown",
+        },
       },
     },
   },
@@ -49,6 +95,9 @@ local plugins = {
         config = function()
           require "custom.configs.null-ls"
         end,
+      },
+      {
+        "nvimdev/lspsaga.nvim",
       },
     },
     config = function()
@@ -90,8 +139,10 @@ local plugins = {
   { "kevinhwang91/nvim-ufo" },
   { "windwp/nvim-autopairs" },
   {
-    -- like TODO HACK WARNING FIX
+    -- like TODO: HACK WARNING FIX  NOTE:
     "folke/todo-comments.nvim",
+    dependencies = { "nvim-lua/plenary.nvim" },
+    -- opts = overrides.todocomments,
     lazy = false,
   },
   {

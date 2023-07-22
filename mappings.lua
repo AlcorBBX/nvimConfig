@@ -1,6 +1,3 @@
--- TODO
--- Add TABS keybildings
---
 ---@type MappingsTable
 local M = {}
 
@@ -90,12 +87,41 @@ M.general = {
       "Floating diagnostic",
     },
     ["<leader>tp"] = {
-      ":lua require('telescope').extensions.projects.projects()<CR>",
+      ":Telescope projects<CR>",
+      -- ":lua require('telescope').extensions.projects.projects()<CR>",
       "Projects",
       opts = { silent = true },
     },
     ["<leader>tc"] = { ":e $MYVIMRC <CR>", "Go to config", opts = { silent = true } },
     ["<leader>W"] = { ":noautocmd w <CR>", "Save without formating", opts = { silent = true } },
+
+    -- lspsaga
+    ["<leader>sk"] = { ":Lspsaga hover_doc <CR>", "LspSaga hover doc", opts = { silent = true } },
+    ["<leader>spd"] = { ":Lspsaga peek_definition <CR>", "LspSaga peek definition", opts = { silent = true } },
+    ["<leader>spD"] = { ":Lspsaga peek_type_definition <CR>", "LspSaga peek type definition", opts = { silent = true } },
+
+    ["<leader>sD"] = {
+      ":Lspsaga show_workplace_diagnostics <CR>",
+      "LspSaga show workspace diagnostic",
+      opts = { silent = true },
+    },
+    ["<leader>sdn"] = { ":Lspsaga diagnostic_jump_next <CR>", "LspSaga diagnostic next", opts = { silent = true } },
+    ["<leader>sdp"] = { ":Lspsaga diagnostic_jump_prev <CR>", "LspSaga diagnostic prev ", opts = { silent = true } },
+
+    ["<leader>sgD"] = { ":Lspsaga goto_type_definition<CR>", "LspSaga goto_type_definition", opts = { silent = true } },
+    ["<leader>spr"] = { ":Lspsaga project_replace <CR>", "LspSaga project replace", opts = { silent = true } },
+    ["<leader>sr"] = { ":Lspsaga rename <CR>", "LspSaga rename", opts = { silent = true } },
+    ["<leader>soc"] = { ":Lspsaga outgoing_calls <CR>", "LspSaga outgoing calls", opts = { silent = true } },
+    ["<leader>sic"] = { ":Lspsaga incomming_calls <CR>", "LspSaga incomming calls", opts = { silent = true } },
+    ["<leader>sa"] = { ":Lspsaga code_action <CR>", "LspSaga code actions", opts = { silent = true } },
+    ["<leader>sgl"] = { ":Lspsaga show_line_diagnostics <CR>", "LspSaga line diagnostic", opts = { silent = true } },
+    -- ["<leader>s"] = { ":Lspsaga show_buf_diagnostics <CR>", "LspSaga ", opts = { silent = true } },
+    -- ["<leader>s"] = { ":Lspsaga show_cursor_diagnostics <CR>", "LspSaga ", opts = { silent = true } },
+    ["<leader>sgd"] = { ":Lspsaga goto_definition <CR>", "LspSaga go to definition", opts = { silent = true } },
+    ["<leader>stt"] = { ":Lspsaga term_toggle <CR>", "LspSaga term toggle", opts = { silent = true } },
+    ["<leader>sL"] = { ":Lspsaga open_log <CR>", "LspSaga open log", opts = { silent = true } },
+    ["<leader>sf"] = { ":Lspsaga finder <CR>", "LspSaga finder", opts = { silent = true } },
+    ["<leader>sO"] = { ":Lspsaga outline <CR>", "LspSaga outline", opts = { silent = true } },
   },
 }
 
