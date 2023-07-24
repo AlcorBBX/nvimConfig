@@ -21,6 +21,46 @@ local plugins = {
     dependencies = {
       "MunifTanjim/nui.nvim",
     },
+    config = function()
+      local cmdline = require "fine-cmdline"
+
+      cmdline.setup {
+        cmdline = {
+          enable_keymaps = true,
+          smart_history = true,
+          prompt = ": ",
+        },
+        popup = {
+          -- position = {
+          --   row = "10%",
+          --   col = "50%",
+          -- },
+          -- size = {
+          --   width = "60%",
+          -- },
+          border = {
+            style = "rounded",
+          },
+          win_options = {
+            winhighlight = "Normal:Normal,FloatBorder:FloatBorder",
+          },
+        },
+        hooks = {
+          before_mount = function(input)
+            -- code
+          end,
+          after_mount = function(input)
+            -- code
+          end,
+          set_keymaps = function(imap, feedkeys)
+            local fn = cmdline.fn
+
+            imap("<C-k>", fn.up_history)
+            imap("<C-j>", fn.down_history)
+          end,
+        },
+      }
+    end,
     lazy = false,
   },
   {
