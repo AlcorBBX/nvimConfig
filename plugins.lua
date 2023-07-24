@@ -17,6 +17,13 @@ local plugins = {
   --   },
   -- },
   {
+    "VonHeikemen/fine-cmdline.nvim",
+    dependencies = {
+      "MunifTanjim/nui.nvim",
+    },
+    lazy = false,
+  },
+  {
     "nvimdev/lspsaga.nvim",
     config = function()
       require("lspsaga").setup {}

@@ -1,6 +1,8 @@
 ---@type MappingsTable
-local M = {}
 
+vim.api.nvim_set_keymap("n", ":", "<cmd>FineCmdline<CR>", { noremap = true })
+
+local M = {}
 -- Modes
 --   normal_mode = "n",
 --   insert_mode = "i",
@@ -10,7 +12,8 @@ local M = {}
 --   command_mode = "c",
 M.general = {
   n = {
-    [";"] = { ":", "enter command mode", opts = { nowait = true } },
+    [";"] = { "<cmd>FineCmdline<CR>", "enter command mode", opts = { noremap = true } },
+    ["<CR>"] = { "<cmd>FineCmdline<CR>", "enter command mode", opts = { nowait = true } },
     ["<leader>w"] = { "<cmd>w<CR>", "Save file", opts = { nowait = true } },
     ["<leader>q"] = { "<cmd>q<CR>", "Exit", opts = { nowait = true } },
     ["<leader>Q"] = { "<cmd>q!<CR>", "Exit without save", opts = { nowait = true } },
@@ -141,6 +144,8 @@ M.disabled = {
     ["<Esc>"] = { "" },
     ["<leader>h"] = { "" },
     ["<leader>f"] = { "" },
+    [":"] = { "" },
+    ["<CR>"] = { "" },
   },
 }
 -- more keybinds!
