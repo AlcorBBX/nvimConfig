@@ -13,7 +13,7 @@ local M = {}
 M.general = {
   n = {
     [";"] = { "<cmd>FineCmdline<CR>", "enter command mode", opts = { noremap = true } },
-    ["<CR>"] = { "<cmd>FineCmdline<CR>", "enter command mode", opts = { nowait = true } },
+    -- ["<CR>"] = { "<cmd>FineCmdline<CR>", "enter command mode", opts = { nowait = true } },
     ["<leader>w"] = { "<cmd>w<CR>", "Save file", opts = { nowait = true } },
     ["<leader>q"] = { "<cmd>q<CR>", "Exit", opts = { nowait = true } },
     ["<leader>Q"] = { "<cmd>q!<CR>", "Exit without save", opts = { nowait = true } },
