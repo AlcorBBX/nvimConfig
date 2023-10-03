@@ -14,7 +14,7 @@
 
 1. `git clone https://github.com/NvChad/NvChad $HOME\AppData\Local\nvim --depth 1`
 
-### if the above path doesnt work, try any
+if the above path doesnt work, try any
 of these paths :
 
 %LOCALAPPDATA%\nvim 
