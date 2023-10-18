@@ -23,6 +23,6 @@ of these paths :
 
 C:Users%USERNAME%AppDataLocal\nvim
 
-3. `nvim`
+2. `nvim`
 
-4. `git clone https://github.com/AlcorBBX/nvimConfig -b nvChadConfig $HOME\AppData\Local\nvim\lua\custom --depth 1`
+3. `git clone https://github.com/AlcorBBX/nvimConfig -b nvChadConfig $HOME\AppData\Local\nvim\lua\custom --depth 1`
